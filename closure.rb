@@ -6,12 +6,17 @@ def foo
 	return "return from foo"
 end
 
+puts foo # prints "return from foo from inside Proc"
+
 def bar
 	f = lambda { return "return from lambda"}
 	f.call # control does not leave bar here
 	return "return from bar"
 end
 
+puts bar # prints "return from bar"
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~é
 class Fixnum
   def times
     if block_given?
@@ -24,10 +29,6 @@ class Fixnum
   end
 end
 
-
-puts foo # prints "return from foo from inside Proc"
-puts bar # prints "return from bar"
-
 5.times { |n| puts "Hi #{n}" }
 enumerator = 5.times
-puts enumerator.minmax
+puts enumerator.class

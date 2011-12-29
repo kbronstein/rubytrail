@@ -13,3 +13,14 @@ puts
 show_args 1, 2
 puts
 show_args 1
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+def say(what= "Hello World")
+	puts what
+end
+
+say
+say "I'm learning Ruby"
+
+
