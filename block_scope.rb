@@ -5,11 +5,8 @@ y = 0
   x = n
   y = y + n
 end
-puts 'y='  + y.inspect
-# => "6"
-puts 'n='  + n.inspect
-# => "3" -- In 1.9.X this will be 10
+puts 'y='  + y.inspect # => "6"
+puts 'n='  + n.inspect # => "3" -- In 1.9.X this will be 10
 print 'Is x defined: '
-puts  defined? x
-# => nil
+puts  defined? x # => nil
 
