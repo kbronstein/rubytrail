@@ -7,8 +7,8 @@ puts
 print "numbers.sort =" 
 p numbers.sort
 
-print "numbers.reverse =" 
-p numbers.reverse
+print "numbers.sort.reverse =" 
+p numbers.sort.reverse
 
 puts "puts numbers ="
 puts numbers
@@ -23,7 +23,7 @@ array_methods = Array.public_methods.sort
 #	puts number
 #end
 
-# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+puts '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'
 
 days = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"]
 
