@@ -1,3 +1,6 @@
+# Quick recap of begin/rescue/end
+#
+
 begin
   fail "Unable to continue"
   # raise and fail can be used interchangeably
