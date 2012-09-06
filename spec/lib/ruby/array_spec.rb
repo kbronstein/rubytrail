@@ -4,19 +4,19 @@ describe "Array" do
   end
 
 
-  it "supports select" do
+  it "select" do
     evens = @numbers.select {|n| n.even?}
 
     evens.should == [2, 4, 6, 8, 10]
   end
 
-  it "supports reject" do
+  it "reject" do
     odds = @numbers.reject {|n| n.even?}
 
     odds.should == [1, 3, 5, 7, 9]
   end
 
-  it "supports partition" do
+  it "partition" do
     evens, odds = @numbers.partition {|n| n.even?}
 
     odds.should  == [1, 3, 5, 7, 9]
@@ -49,13 +49,19 @@ describe "Array" do
     end
   end
 
-  it "supports sort" do
+  it "sort" do
     [5, 3, 1, 2, 4].sort.should == [1, 2, 3, 4, 5]
   end
 
-  it "supports sort_by" do
+  it "sort_by" do
     words = ["World!", "Ruby", "Hello"].sort_by {|word| word.length}
 
     words.should == ["Ruby", "Hello", "World!"]
+  end
+
+  it "sample returns a random array item" do
+    @numbers.stub(:sample).and_return(4)
+
+    @numbers.sample.should == 4
   end
 end
