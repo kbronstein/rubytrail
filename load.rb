@@ -1,3 +1,3 @@
-load 'sayhello.rb'
-load 'sayhello.rb'
-load 'sayhello.rb'
+load 'hello.rb'
+load 'hello.rb'
+load 'hello.rb'
