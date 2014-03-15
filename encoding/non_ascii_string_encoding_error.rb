@@ -4,4 +4,4 @@
 
 
 puts __ENCODING__
-puts "voilà
+puts "voilà"

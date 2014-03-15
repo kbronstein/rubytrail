@@ -4,7 +4,7 @@ module MyEnumerable
     return this.dup unless block_given?
     result = []
     each do |item|
-      result << yield item
+      result << yield(item)
     end
     result
   end

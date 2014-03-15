@@ -1,4 +1,4 @@
-def (n=1)
+def digits(n=1)
   yield 1 * n
   yield 2 * n 
   yield 3 * n

@@ -3,7 +3,6 @@ require "my_array"
 
 
 describe MyArray do
-
   
   it { should respond_to :each, :member?, :find_all, :collect }
   
